@@ -1,0 +1,35 @@
+local pos1 = game:GetService("Workspace").Ignored.Shop["[Shotgun] - $1288"]:FindFirstChildOfClass("Part").Position
+
+                                                local pos2 = game:GetService("Workspace").Ignored.Shop["20 [Shotgun Ammo] - $62"]:FindFirstChildOfClass("Part").Position
+
+                                                local click1 = game:GetService("Workspace").Ignored.Shop["[Shotgun] - $1288"].ClickDetector
+
+                                                local click2 = game:GetService("Workspace").Ignored.Shop["20 [Shotgun Ammo] - $62"].ClickDetector
+
+ 
+
+                                                local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+                                                local oldPos = hum.CFrame
+
+ 
+
+                                                hum.CFrame = CFrame.new(pos1)
+
+                                                wait(0.3)
+
+                                                fireclickdetector(click1)
+
+                                                hum.CFrame = oldPos
+
+                                                wait(0.3)
+
+ 
+
+                                                hum.CFrame = CFrame.new(pos2)
+
+                                                wait(0.3)
+
+                                                fireclickdetector(click2)
+
+                                                hum.CFrame = oldPos
